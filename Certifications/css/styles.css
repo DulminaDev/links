@@ -1,15 +1,10 @@
-/* Globle Section */
-*{
-    text-align: center;
+.profile-pic {
+    width: 10%;
+    border-radius: 100%;
+    display: block;
+    margin: 5% auto 1%;
 }
 
-
-
-
-
-
-
-/* Background  */
 video {
 	position: fixed;
 	top: 50%;
@@ -22,75 +17,36 @@ video {
 	transform: translateX(-50%) translateY(-50%);
 }
 
-
-
-
-
-
-
-
-/* Profile Pic Section */
-.profile-pic {
-    width: 10%;
-    border-radius: 100%;
-    display: block;
-    margin: 5% auto 1%;
+*{
+    text-align: center;
 }
 
-
-
-
-
-
-
-
-/* Title & Subtitle Area */
 .title {
     color: lightgray;
     font-size: large;
     font-weight: bold;
     margin: 0 auto;
 }
+
 .subtitle{
-    color:lightgray;
+    color:gray;
 }
 
+.btn {
+    width: 50%;
+    margin: .9%;
+    backdrop-filter: blur(8px);
+}
 
-
-
-
-
-
-/* Links With Icon Section */
 i {
     margin-right: 5px;
 }
+
 .icon-link {
     color: white;
     text-decoration: none;
 }
 
-
-
-
-
-
-
-/* Links Section */
-.btn {
-    width: 40%;
-    margin: .8%;
-    backdrop-filter: blur(8px);
-}
-
-
-
-
-
-
-
-
-/* Footer Section */
 footer{
     padding: 0px 0 40px;
     text-align: center;
@@ -102,15 +58,6 @@ footer{
 .copyright{
     z-index: 5;
 }
-
-
-
-
-
-
-
-
-/* Media Querries */
 
 @media (max-width: 800px) {
     video {
