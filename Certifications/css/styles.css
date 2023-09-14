@@ -1,83 +1,5 @@
-.profile-pic {
-    width: 10%;
-    border-radius: 100%;
-    display: block;
-    margin: 5% auto 1%;
-}
-
-video {
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	min-width: 100%;
-	min-height: 100%;
-	width: auto;
-	height: auto;
-	z-index: -2;
-	transform: translateX(-50%) translateY(-50%);
-}
-
-*{
-    text-align: center;
-}
-
-.title {
-    color: lightgray;
-    font-size: large;
-    font-weight: bold;
-    margin: 0 auto;
-}
-
-.subtitle{
-    color:gray;
-}
-
-.btn {
-    width: 50%;
-    margin: .9%;
-    backdrop-filter: blur(8px);
-}
-
-i {
-    margin-right: 5px;
-}
-
-.icon-link {
-    color: white;
-    text-decoration: none;
-}
-
-footer{
-    padding: 0px 0 40px;
-    text-align: center;
-    color: gray;
-    backdrop-filter: blur(8px);
-  z-index: -2;
-}
-
-.copyright{
-    z-index: 5;
-}
-
-@media (max-width: 800px) {
-    video {
-        transform: translateX(-28%) translateY(-50%);
-    }
-    .profile-pic {
-        width: 20%;
-        border-radius: 100%;
-        display: block;
-        margin: 7% auto;
-        margin-left: 40%;
-    }
-
-    .btn {
-        width: 70%;
-        margin-bottom: 3%;
-    }
-}
-
 /* Loader */
+
 .loader {
     position: fixed;
     top: 0;
@@ -117,4 +39,122 @@ footer{
       transform: rotate(1turn);
     }
   }
+
+/* Background  */
+
+video {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -5;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+/* Body */
+
+body{
+  min-height: 100vh; 
+  margin: 0; 
   
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+/* Header Area */
+
+header {
+  min-height:50px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+/* Profile Pic Section */
+.profile-pic {
+    border-radius: 100%;
+    display: block;
+    filter:drop-shadow(5px 5px 10px black);
+    margin-top: 15%;
+}
+
+/* Links With Icon Section */
+.icon-link-container{
+    display: flex;
+    justify-content: center;
+}
+
+i {
+    margin-right: 10px;
+}
+.icon-link {
+    color: white;
+    text-decoration: none;
+}
+
+/* Title & Subtitle Area */
+.title {
+    color: rgb(255, 255, 255);
+    font-family: "patua one";
+    margin: 0 auto;
+    font-size: 20px;
+}
+.subtitle{
+    color:rgb(228, 216, 216);
+    font-family: "Saira";
+    font-weight: large;
+}
+
+.title-area{
+    text-align: center;
+}
+
+/* Main Area */
+main {
+  margin-bottom: 3%;
+}
+
+
+/* Links Area */
+
+.btn {
+  width: 100%;
+  margin-top: 3%;
+  backdrop-filter: blur(8px);
+}
+
+/* Footer Section */
+footer{
+    min-height:50px; 
+  
+    bottom: 0;
+    padding: 0px 0 40px;
+    text-align: center;
+    color: gray;
+    backdrop-filter: blur(8px);
+    z-index: -2;
+  }
+  
+  
+  .copyright{
+    z-index: 5;
+  }
+
+/* Media Querries */
+
+@media (max-width: 575px) {
+  .profile-pic {
+    width: 60%;
+    margin-top: 5%;
+  }
+
+  .btn {
+    margin: 2%;
+  }
+
+}  
